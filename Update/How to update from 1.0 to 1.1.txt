@@ -1,0 +1,22 @@
+-replace .htaccess
+
+-replace core/init.php
+-replace core/functions/titles.php
+-replace core/classes/Pagination.php
+-replace core/classes/Quotes.php
+
+-replace languages/english.php
+
+-replace template/css/custom.css
+-replace template/includes/menu.php
+
+-replace pages/authors.php
+-replace pages/admin_website_settings.php
+-replace pages/admin_user_edit.php
+
+-copy pages/search.php
+
+RUN THESE QUERIES ONE BY ONE WITH YOUR DATABASE MANAGER ON YOUR CURRENT DATABASE
+--------------------------------------------------------------------------------
+
+ALTER TABLE `settings` ADD `authors_pagination` INT NOT NULL AFTER `quotes_pagination`;

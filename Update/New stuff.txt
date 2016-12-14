@@ -1,0 +1,9 @@
+<strong>Update 1.3</strong>
+<blockquote>
+
+<li><strong>Overall System improvements</strong></li>
+<li><strong>Ability to use a default captcha instead of recaptcha</strong></li>
+<li><strong>Ability to change the TimeZone settings</li></strong>
+<li><strong>Bugfixes & Improvements</strong></li>
+
+</blockquote>

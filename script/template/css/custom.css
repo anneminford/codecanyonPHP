@@ -1,0 +1,343 @@
+/* Overriding some */
+
+/* Fixing the lightbox */
+.input-group .form-control {
+	z-index: 0;
+}
+
+/* Modifications for sticky footer */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: 130px;
+}
+.sticky-footer {
+	font-family: 'Segoe UI', Tahoma, Segoe UI, Arial, sans-serif;
+	position: absolute;
+	bottom: 0;
+	height: 91px;
+	background: rgb(59, 79, 94);
+	width: 100%;
+	padding-top: 20px;
+	border-top: 1px solid rgb(211, 211, 211);
+	margin-top: 50px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.sticky-footer, .sticky-footer a {
+	color: #EFEFEF;
+}
+
+.sticky-footer a:hover {
+	color: #fff;
+}
+
+
+/* Helper classes */
+.shadow {
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
+	color: white;
+}
+
+.white, .white a {
+  color: #fff;
+}
+.black, .black a {
+  color: #000;
+}
+.red {
+	color: #c41745;
+}
+
+.green {
+	color: #17C41E;
+}
+
+.inline {
+	display: inline;
+}
+
+.center {
+	text-align: center;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.table-fixed-full {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.table-statistics tr td:first-child {
+	font-weight: bold;
+}
+
+.no-underline, .no-underline:hover{
+	text-decoration: none;
+}
+
+.panel-heading, .panel-body {
+	word-break: break-word;
+}
+
+.glyphicon-large {
+	font-size: 80px;
+}
+
+
+
+.opc  {
+    opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.opc:hover {
+    opacity: 1;
+}
+
+.media .media-body .media-span-opacity {
+	opacity:0;
+	transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-webkit-transition: opacity .5s ease-out;
+	-o-transition: opacity .5s ease-out;
+}
+
+.media:hover .media-span-opacity {
+	opacity: 1;
+
+}
+
+.quote-icons {
+	opacity:0;
+	transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-webkit-transition: opacity .5s ease-out;
+	-o-transition: opacity .5s ease-out;
+}
+
+.panel:hover .quote-icons {
+	opacity: 1;
+}
+
+/* Category banner */
+.panel-fixed {
+	height: 150px;
+}
+
+
+/* No margin class */
+.no-margin {
+	margin: 0;
+}
+
+/* Navbar custom menu */
+.navbar-static-top {
+	font-family: 'Segoe UI', Tahoma, Segoe UI, Arial, sans-serif;
+	text-transform: uppercase;
+	border: 0;
+	background: white;
+}
+.navbar-no-margin {
+	margin: 0;
+}
+.navbar-brand {
+	font-size: 20px;
+	height: 70px;
+	padding: 30px;
+}
+.navbar-nav>li>a {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #000;
+}
+.navbar-nav {
+	float: right;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+	background-color: #FFFFFF;
+	color: #2781CD;
+}
+.dropdown-menu {
+	text-transform: lowercase;
+	border-top: 0;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #2781CD;
+	background-color: transparent;
+}
+.list-group-item:first-child {
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+.list-group-item:last-child {
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px; 
+}
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+	background-color: #3B4F5E;
+	border-color: #3B4F5E;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	background-color: #3B4F5E;
+}
+
+/* input labels */
+.input-label-online {
+	background-color: #5cb85c;
+	color: white;
+	border-color: #5cb85c;
+}
+
+.input-label-offline {
+	background-color: #d9534f;
+	color: white;
+	border-color: #d9534f;
+}
+
+/* Quotes */
+.panel {
+	border-radius: 0px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.0);
+	box-shadow: 0 1px 1px rgba(0,0,0,.0);
+}
+.quote-heading {
+	padding: 0px;
+	border-bottom: 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+.quote-body {
+	font-size: 18px;
+	background: url('../images/quotes.png') no-repeat 5px 5px;
+	color: rgb(47, 47, 47);
+}
+
+.quote-body a, .quote-body a:hover {
+	color: rgb(47, 47, 47);
+	text-decoration: none;
+}
+
+.quote-footer {
+
+}
+
+
+
+/* Social Icons */
+.navbar-social {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.navbar-social a {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.navbar-social a:nth-child(1) {
+	color: #3B579D;
+}
+.navbar-social a:nth-child(2) {
+	color: #1AB2E8;
+}
+.navbar-social a:nth-child(3) {
+	color: #DD4B39;
+}
+
+/* Index container */
+.index-container {
+	position: relative;
+	font-family: 'Segoe UI', Tahoma, Segoe UI, Arial, sans-serif;
+	font-weight: 100;
+	width: 100%;
+	min-height: 150px;
+	height: auto;
+	max-height: 515px;
+	background: url('../images/index.jpg');
+	color: white;
+	margin-bottom: 50px;
+	padding: 10px 0px 20px 0px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.index-title {
+	font-size: 42px;
+}
+
+.index-text {
+	font-size: 20px;
+	background: rgba(59, 79, 94, 0.37);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* Share buttons for the quote page */
+.share-button {
+	display: block;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	color: white;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	margin-bottom: 10px;
+}
+
+/* Share buttons for the quotes list */
+.small-share-button {
+	display: inline-block;
+	width: 22px;
+	padding-left: 0;
+	padding-right: 0;
+	color: white;
+	padding: 2px 2px;
+	font-size: 12px;
+	line-height: 1.33;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.panel-body .small-share-button {
+	opacity:0;
+	transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-webkit-transition: opacity .5s ease-out;
+	-o-transition: opacity .5s ease-out;
+}
+
+.panel-body:hover .small-share-button {
+	opacity: 1;
+
+}
+
+
+@media only screen and (max-device-width: 1025px), only screen and (device-width: 1025px) and (device-height: 1025px), only screen and (width: 1025px) and (orientation: landscape), only screen and (device-width: 1025px), only screen and (max-width: 1025px) {
+	.index-title {
+		font-size: 70px;
+	}
+
+	.index-text {
+		display: none;
+	}
+}
+

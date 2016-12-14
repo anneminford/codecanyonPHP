@@ -1,0 +1,85 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	# Main Basic Pages #
+	RewriteRule ^index$ index.php
+	RewriteRule ^sitemap.xml$ sitemap.php
+ 	RewriteRule ^login$ index.php?page=login 
+	RewriteRule ^logout$ index.php?page=logout 
+	RewriteRule ^register$ index.php?page=register 
+	RewriteRule ^resend-activation$ index.php?page=resend_activation 
+	RewriteRule ^submit$ index.php?page=submit
+	RewriteRule ^lost-password$ index.php?page=lost_password 
+	RewriteRule ^reset-password/([^/]*)/([^/]*)$ index.php?page=reset_password&email=$1&lost_password_code=$2 
+	RewriteRule ^activate/([^/]*)/([^/]*)$ index.php?page=activate&email=$1&activation_code=$2
+	RewriteRule ^not-found$ index.php?page=not_found
+	RewriteRule ^search$ index.php?page=search
+
+	RewriteRule ^terms-of-service$ index.php?page=tos
+	RewriteRule ^contact$ index.php?page=contact
+	RewriteRule ^privacy-policy$ index.php?page=privacy_policy
+	RewriteRule ^disclaimer$ index.php?page=disclaimer
+
+	RewriteRule ^settings/design$ index.php?page=design_settings
+	RewriteRule ^settings/password$ index.php?page=change_password 
+	RewriteRule ^settings/profile$ index.php?page=profile_settings 
+ 
+
+ 	# Admin Pages #
+	RewriteRule ^admin/authors-management$ index.php?page=admin_authors_management 
+	RewriteRule ^admin/authors-management/delete/([^/]*)/([^/]*)$ index.php?page=admin_authors_management&delete=$1&token=$2 
+	RewriteRule ^admin/edit-author/([^/]*)$ index.php?page=admin_author_edit&author_id=$1 
+
+	RewriteRule ^admin/categories-management$ index.php?page=admin_categories_management 
+	RewriteRule ^admin/categories-management/delete/([^/]*)/([^/]*)$ index.php?page=admin_categories_management&delete=$1&token=$2 
+	RewriteRule ^admin/edit-category/([^/]*)$ index.php?page=admin_category_edit&category_id=$1 
+
+	RewriteRule ^admin/users-management$ index.php?page=admin_users_management 
+	RewriteRule ^admin/users-management/status/([^/]*)/([^/]*)$ index.php?page=admin_users_management&status=$1&token=$2 
+	RewriteRule ^admin/users-management/delete/([^/]*)/([^/]*)$ index.php?page=admin_users_management&delete=$1&token=$2 
+	RewriteRule ^admin/edit-user/([^/]*)$ index.php?page=admin_user_edit&user_id=$1 
+
+	RewriteRule ^admin/quotes-management$ index.php?page=admin_quotes_management 
+	RewriteRule ^admin/quotes-management/([^/]*)$ index.php?page=admin_quotes_management&current_page=$1 [QSA]
+
+	RewriteRule ^admin/edit-quote/([^/]*)/([^/]*)/([^/]*)$ index.php?page=admin_quote_edit&quote_id=$1&type=$2&token=$3
+	RewriteRule ^admin/edit-quote/([^/]*)$ index.php?page=admin_quote_edit&quote_id=$1
+
+	RewriteRule ^admin/reports-management$ index.php?page=admin_reports_management 
+	RewriteRule ^admin/edit-report/([^/]*)$ index.php?page=admin_report_edit&report_id=$1 [QSA]
+
+	RewriteRule ^admin/website-settings$ index.php?page=admin_website_settings
+	RewriteRule ^admin/website-settings/success$ index.php?page=admin_website_settings&status=success
+
+	RewriteRule ^admin/website-statistics$ index.php?page=admin_website_statistics
+
+
+	# Complex Pages #
+	RewriteRule ^quotes$ index.php?page=quotes [QSA]
+	RewriteRule ^quotes/([^/]*)$ index.php?page=quotes&current_page=$1 [QSA]
+	
+	RewriteRule ^my-quotes$ index.php?page=my_quotes
+	RewriteRule ^my-quotes/([^/]*)$ index.php?page=my_quotes&current_page=$1
+	RewriteRule ^my-favorites$ index.php?page=my_favorites
+	RewriteRule ^my-favorites/([^/]*)$ index.php?page=my_favorites&current_page=$1
+	RewriteRule ^profile/([^/]*)$ index.php?page=profile&username=$1 
+
+	RewriteRule ^quote/([^/]*)$ index.php?page=quote&quote_id=$1
+	
+	RewriteRule ^category/([^/]*)$ index.php?page=category&url=$1 [QSA]
+	RewriteRule ^category/([^/]*)/([^/]*)$ index.php?page=category&url=$1&current_page=$2 [QSA]
+
+	RewriteRule ^author/([^/]*)$ index.php?page=author&url=$1
+	RewriteRule ^author/([^/]*)/([^/]*)$ index.php?page=author&current_page=$1
+	RewriteRule ^authors$ index.php?page=authors [QSA]
+	RewriteRule ^authors/([^/]*)$ index.php?page=authors&current_page=$1
+
+	RewriteRule ^country/([^/]*)$ index.php?page=country&country_code=$1 [QSA]
+	RewriteRule ^country/([^/]*)/([^/]*)$ index.php?page=country&country_code=$1&current_page=$2 [QSA]
+	RewriteRule ^countries$ index.php?page=countries
+
+	RewriteRule ^tag/([^/]*)$ index.php?page=tag&url=$1 [QSA]
+	RewriteRule ^tag/([^/]*)/([^/]*)$ index.php?page=tag&url=$1&current_page=$2 [QSA]
+</IfModule>

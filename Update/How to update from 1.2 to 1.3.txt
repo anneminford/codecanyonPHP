@@ -1,0 +1,4 @@
+You should do a clean install since there are changes in almost all files / database structure !
+
+Thank you !
+Check out my latest scripts here : http://codecanyon.net/user/GrohsFabian/portfolio
